@@ -49,7 +49,7 @@ export function LinksTable({ links, onLinksChange }) {
 
   const copyShortUrl = (code) => {
     if (!code) return;
-    const url = `${window.location.origin}/${code}`;
+    const url = `https://smallurl-vcce.onrender.com/${code}`;
     navigator.clipboard.writeText(url);
     toast({
       title: "Copied!",
