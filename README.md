@@ -1,4 +1,17 @@
-# React + Vite
+# backend code 
+https://github.com/srimaran712/aganitha-test
+
+# api domain
+https://smallurl-vcce.onrender.com
+
+# routes
+//routes
+app.post('/api/links', UrlShortenerController.createUrlShortener)
+app.get('/api/links', UrlShortenerController.getAllLinks)
+app.get('/api/links/:code', UrlShortenerController.getLinkStats)
+app.delete('/api/links/:code', UrlShortenerController.deleteLink)
+//route for updating updating clicks and last clicked at
+app.get('/:code', UrlShortenerController.redirect)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
