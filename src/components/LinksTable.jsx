@@ -12,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Copy, Trash2, ExternalLink, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import axios from "axios";
+import { BASE_URL } from "@/lib/constants";
 
 import {
   AlertDialog,
@@ -49,7 +50,7 @@ export function LinksTable({ links, onLinksChange }) {
 
   const copyShortUrl = (code) => {
     if (!code) return;
-    const url = `${window.location.origin}/${code}`;
+    const url = `https://smallurl-vcce.onrender.com/${code}`;
     navigator.clipboard.writeText(url);
     toast({
       title: "Copied!",

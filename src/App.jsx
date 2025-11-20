@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/code/:code" element={<Stats />} />
         <Route path="/health" element={<Health />} />
-        <Route path={`https://aganitha-test-frontend.onrender.com/:code`} element={<Redirect />} />
+        <Route path={`/:code`} element={<Redirect />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

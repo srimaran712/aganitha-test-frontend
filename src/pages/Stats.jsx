@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, ExternalLink, Copy, Calendar, MousePointerClick } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import axios from "axios";
+import { BASE_URL } from "@/lib/constants";
 
 const formatRelativeTime = (date) => {
   if (!date) return "Never";
@@ -67,7 +68,7 @@ const Stats = () => {
 
   const copyShortUrl = () => {
     if (!code) return;
-    const url = `${window.location.origin}/${code}`;
+    const url = `https://smallurl-vcce.onrender.com/${code}`;
     navigator.clipboard.writeText(url);
     toast({
       title: "Copied!",
