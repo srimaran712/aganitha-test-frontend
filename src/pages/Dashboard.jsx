@@ -38,7 +38,7 @@ const Dashboard = () => {
               <h1 className="text-2xl font-bold">TinyLink</h1>
             </div>
             <nav className="flex items-center gap-4">
-              <a href="/healthz" className="text-sm text-muted-foreground hover:text-foreground">
+              <a href="/health" className="text-sm text-muted-foreground hover:text-foreground">
                 Health
               </a>
             </nav>
