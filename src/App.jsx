@@ -15,15 +15,15 @@ function App() {
      <TooltipProvider>
     <Toaster />
     <Sonner />
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/code/:code" element={<Stats />} />
         <Route path="/health" element={<Health />} />
-        <Route path="/:code" element={<Redirect />} />
+        <Route path={`https://aganitha-test-frontend.onrender.com/:code`} element={<Redirect />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </TooltipProvider>
   )
 }
