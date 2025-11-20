@@ -15,8 +15,8 @@ const Redirect = () => {
         const res = await axios.get(
           `https://smallurl-vcce.onrender.com/${code}`
         );
-        const targetUrl = res.data?.url;
-
+       // const targetUrl = res.data?.url;
+ const targetUrl = `https://smallurl-vcce.onrender.com/${code}`;
         if (targetUrl) {
           window.location.replace(targetUrl);
         } else {
