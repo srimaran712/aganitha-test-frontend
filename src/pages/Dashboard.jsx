@@ -4,8 +4,10 @@ import { LinksTable } from "@/components/LinksTable";
 import { AddLinkDialog } from "@/components/AddLinkDialog";
 import { Link as LinkIcon } from "lucide-react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [links, setLinks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -38,7 +40,7 @@ const Dashboard = () => {
               <h1 className="text-2xl font-bold">TinyLink</h1>
             </div>
             <nav className="flex items-center gap-4">
-              <a href="/health" className="text-sm text-muted-foreground hover:text-foreground">
+              <a href="#" onClick={() => navigate("/health")} className="text-sm text-muted-foreground hover:text-foreground">
                 Health
               </a>
             </nav>
