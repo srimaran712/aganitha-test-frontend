@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/code/:code" element={<Stats />} />
-        <Route path="/healthz" element={<Health />} />
+        <Route path="/health" element={<Health />} />
         <Route path="/:code" element={<Redirect />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
