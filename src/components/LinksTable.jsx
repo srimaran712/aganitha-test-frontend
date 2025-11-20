@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Copy, Trash2, ExternalLink, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import axios from "axios";
-import { BASE_URL } from "@/lib/constants";
+
 
 import {
   AlertDialog,

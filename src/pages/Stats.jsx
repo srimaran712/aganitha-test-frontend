@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, ExternalLink, Copy, Calendar, MousePointerClick } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import axios from "axios";
-import { BASE_URL } from "@/lib/constants";
+
 
 const formatRelativeTime = (date) => {
   if (!date) return "Never";
